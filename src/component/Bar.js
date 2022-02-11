@@ -23,7 +23,7 @@ export default function BarChart() {
 
   return (
     <div>
-      <h2>Bar Example (custom size)</h2>
+      <h2>Bar Examplee (custom size)</h2>
       <Bar data={dataBar} width={100} height={50} />
     </div>
   );
