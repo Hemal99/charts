@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import {  Pie } from "react-chartjs-2";
+import React from "react";
+import { Pie } from "react-chartjs-2";
 import { chartColors } from "./colors";
 
 const pieOptions = {
@@ -31,7 +31,7 @@ const pieData = {
   labels: ["Wash/Dry/Fold", "Dry Cleaning", "Tailoring"],
   datasets: [
     {
-      data: [50,30 , 20],
+      data: [50, 30, 20],
       backgroundColor: chartColors,
       hoverBackgroundColor: chartColors,
     },
@@ -53,19 +53,11 @@ const styles = {
 };
 
 export default function PieChart() {
-    let chartInstance = null;
-
   return (
     <div className="App">
       <div style={styles.relative}>
         <div style={styles.pieContainer}>
-          <Pie
-            data={pieData}
-            options={pieOptions}
-            ref={(input) => {
-              chartInstance = input;
-            }}
-          />
+          <Pie data={pieData} options={pieOptions} />
         </div>
         <div id="legend" />
       </div>
