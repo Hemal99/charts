@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Line } from "react-chartjs-2";
+// eslint-disable-next-line
 import Chart from "chart.js/auto";
 import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
